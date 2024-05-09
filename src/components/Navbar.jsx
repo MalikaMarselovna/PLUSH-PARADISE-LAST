@@ -19,7 +19,7 @@ function Navbar() {
                         Eng
                     </div>
                     <div className="searchInput flex border-[2px] border-solid border-lighgrey rounded-md items-center ml-[10px] p-[5px] focus-within:border-[#f92e9e] transition-all">
-                        <input type="text" className="input outline-none" />
+                        <input type="text" className="input outline-none w-[500px]" />
                         <Search className='' style={{fontSize: '16px'}}/>
                     </div>
 
@@ -30,7 +30,7 @@ function Navbar() {
                 <div className="right flex flex-1 items-center justify-end">
                     <div className={style} >register</div>
                     <div className={style} >sign in</div>
-                    <div>
+                    <div className={style} >
                     <Badge badgeContent={2} color='primary'>
                         <ShoppingCartOutlined/>
                     </Badge>
