@@ -1,13 +1,19 @@
-import React from 'react'
-import {Close} from '@material-ui/icons';
+import { React, useState } from 'react'
+import { Close } from '@material-ui/icons';
 
 function Announce() {
-  return (
-    <div className='bg-[#f92e9e] font-bold text-white flex'>
-        <h2>Announce 40%</h2>
-        <Close/>
-    </div>
-  )
+    const [announceStyle, setAnnounceStyle] = useState('bg-[#f92e9e] font-bold text-white flex items-center justify-center')
+
+    const handleClose = () => {
+        setAnnounceStyle(announceStyle + " hidden")
+    }
+
+    return (
+        <div className={announceStyle}>
+            <h2> Hurry up it's  40% off now</h2>
+            <Close className='cursor-pointer' onClick={handleClose} />
+        </div>
+    )
 }
 
 export default Announce
