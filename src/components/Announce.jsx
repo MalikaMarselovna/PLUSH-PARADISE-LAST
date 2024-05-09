@@ -2,7 +2,7 @@ import { React, useState } from 'react'
 import { Close } from '@material-ui/icons';
 
 function Announce() {
-    const [announceStyle, setAnnounceStyle] = useState('bg-[#f92e9e] font-bold text-white flex items-center justify-center')
+    const [announceStyle, setAnnounceStyle] = useState('bg-[#f92e9e] font-bold text-white flex items-center justify-center p-[10px]')
 
     const handleClose = () => {
         setAnnounceStyle(announceStyle + " hidden")
