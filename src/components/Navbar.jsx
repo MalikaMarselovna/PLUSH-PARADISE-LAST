@@ -1,5 +1,5 @@
 import React from 'react'
-import { Search,ShoppingCartOutlined } from '@material-ui/icons';
+import { Search,ShoppingCartOutlined, FavoriteBorderOutlined } from '@material-ui/icons';
 import Logo from './img/logo.svg'
 import { Badge } from '@material-ui/core';
 
@@ -30,8 +30,9 @@ function Navbar() {
                 <div className="right flex flex-1 items-center justify-end">
                     <div className={style} >register</div>
                     <div className={style} >sign in</div>
+                    <FavoriteBorderOutlined className='ml-3'/>
                     <div className={style} >
-                    <Badge badgeContent={2} color='primary'>
+                    <Badge badgeContent={1} color='primary'>
                         <ShoppingCartOutlined/>
                     </Badge>
                     </div>
