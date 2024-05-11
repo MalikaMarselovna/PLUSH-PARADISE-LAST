@@ -1,12 +1,17 @@
 import React from 'react'
+import {ApiCategories} from '../apiFolder/CategoryApi'
+import Category  from './Category'
+
 
 function Categories() {
   return (
     <div className='flex justify-between items-center p-5
 '>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+        {
+            ApiCategories.map((category, index)=>{
+               return <Category item={category} key={index}/>
+            })
+        }
     </div>
   )
 }

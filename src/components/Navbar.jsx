@@ -10,7 +10,7 @@ function Navbar() {
             <div className='wrapper pl-[20px] pr-[20px] pt-[10px] pb-[10px] flex justify-between items-center'>
                  {/* logo */}
                  <div className="center flex-1 text-center ">
-                    <div className="logo font-bold text-lg"> <img src={Logo} alt="" className='w-[30%] cursor-pointer' /></div>
+                    <div className="logo font-bold text-lg"> <img src={Logo} alt="" className='w-[40%] cursor-pointer' /></div>
 
                 </div>
                 {/* left div */}

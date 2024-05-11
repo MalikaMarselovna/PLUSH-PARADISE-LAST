@@ -8,7 +8,7 @@ export const ApiSlides = [
         background: 'bg-[#fff]'
     },
     {
-        src: "https://i.pinimg.com/564x/d2/f3/ae/d2f3ae6b61fa372d0752cac645ab5c4f.jpg",
+        src: "https://shop.amigurumi.today/wp-content/uploads/2022/03/Rosalie-Doll-amigurumi-pattern-by-Amigurumi-Today-768x768.jpg",
         active: true,
         content: {
             h2: "Avail Awesome Deals this week!",
@@ -18,7 +18,7 @@ export const ApiSlides = [
     },
     
     {
-        src: "https://i.pinimg.com/736x/91/1e/55/911e5546cee0bd17cfbf2d7d5f8ce498.jpg",
+        src: "https://shop.amigurumi.today/wp-content/uploads/2022/06/Amigurumi-Luna-Unicorn-Crochet-Pattern-PDF-768x768.jpg",
         active: true,
         content: {
             h2: "Avail Awesome Deals this week!",

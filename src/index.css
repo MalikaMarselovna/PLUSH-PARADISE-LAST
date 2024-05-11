@@ -7,13 +7,15 @@
 @layer components {
   .easy-in {
     /* Define the styles for the custom class */
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-in ;
   }
 }
 
 /* Your existing styles */
 .btn {
-  @apply text-white bg-[#f92e9e] rounded-md shadow-md p-3 hover:scale-[1.1] easy-in duration-100 cursor-pointer hover:bg-pink-500 ease-in;
+  @apply text-white bg-[#f92e9e] rounded-md shadow-md p-3 hover:scale-[1.1] easy-in duration-100 cursor-pointer hover:bg-[#16ffbd] ease-in cursor-pointer ;
 }
-
+.card{
+  transition: 1s
+}
 @tailwind utilities;
