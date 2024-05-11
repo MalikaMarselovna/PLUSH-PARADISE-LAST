@@ -10,7 +10,7 @@ function Slider() {
     const[activeSlide, setActiveSlide] = useState(0)
 
     //style
-    const arrowStyle = " rounded-full bg-grey flex  shadow-sm items-center  justify-center hover:cursor-pointer";
+    const arrowStyle = "rounded-full m-3 text-white bg-[#f92e9e] hover:bg-[#16ffbd] flex  shadow-sm items-center  justify-center hover:cursor-pointer";
 
     const nextSlide =()=> {
         if(activeSlide ===slides.length - 1)
@@ -37,7 +37,7 @@ function Slider() {
     <div className="parentDiv h-540px bg-white flex items-center justify-between">
         {/* leftarrow */}
         <div className={arrowStyle}>
-            <ArrowLeftOutlined  style={{fontSize : '50px'}} onClick={prvslide}/>
+            <ArrowLeftOutlined   style={{fontSize : '50px'}} onClick={prvslide}/>
         </div>
         {/* slide div */}
         {slides.map((slide, index)=>{
