@@ -3,6 +3,7 @@ import Announce from "../components/Announce";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import Counter from "../components/Counter";
 
 function ProductPage() {
   return (
@@ -26,21 +27,25 @@ function ProductPage() {
 
             {/* color variants */}
             <div className="flex text-2xl mt-7">
-                Colors
-                <div className="bg-pink-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5"></div>
-                <div className="bg-sky-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5"></div>
-                <div className="bg-white-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5"></div>
-                <div className="bg-green-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5"></div>
+                Colors:
+                <div className="bg-pink-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-[#f92e9e]"></div>
+                <div className="bg-sky-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-[#f92e9e]"></div>
+                <div className="bg-white-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-[#f92e9e]"></div>
+                <div className="bg-green-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-[#f92e9e]"></div>
             </div>
             <div className="mt-7 text-2xl">
-                Size
-                <select className="ml-5 border-2">
+                Size:
+                <select className="ml-5 border-2 border-[#f92e9e] rounded-md outline-none w-[150px]">
                     <option selected disablet>Select</option>
                     <option>Small</option>
                     <option>Medium</option>
                     <option>Large</option>
                 </select>
             </div>
+            <div className="mt-5">
+                <Counter/>
+            </div>
+            <button className="btn mt-7">Add to cart</button>
 
         </div>
         
