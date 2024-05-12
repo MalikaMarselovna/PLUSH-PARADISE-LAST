@@ -15,7 +15,7 @@
 .btn {
   @apply text-white bg-[#f92e9e] rounded-md shadow-md p-3 hover:scale-[1.1] easy-in duration-100 cursor-pointer hover:bg-[#16ffbd] ease-in cursor-pointer ;
 }
-.card{
+.card, a, div{
   transition: 1s
 }
 @tailwind utilities;
