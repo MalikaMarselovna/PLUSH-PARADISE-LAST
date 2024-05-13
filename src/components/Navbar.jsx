@@ -10,7 +10,7 @@ import Logo from "./img/logo.svg";
 import { Badge } from "@material-ui/core";
 
 function Navbar() {
-  const style = "text-[14px] cursor-pointer ml-[25px]";
+  const style = "text-[14px] cursor-pointer ml-[25px] easy-in duration-600";
   return (
     <div className="navbar shadow-md relative z-10 ">
       <div className="wrapper pl-[20px] pr-[20px] pt-[10px] pb-[10px] flex justify-between items-center">
@@ -36,23 +36,23 @@ function Navbar() {
         {/* right div */}
         <div className="right flex flex-1 items-center justify-end">
           <button className={style}>
-            <HowToReg className="text-[#f92e9e]" style={{ fontSize: "35px" }} />
+            <HowToReg className="text-[#f92e9e]  hover:text-[#16ffbd] " style={{ fontSize: "35px" }} />
             {/* register */}
           </button>
           <button className={style}>
-            <AssignmentInd className="text-[#f92e9e]" style={{ fontSize: "35px" }}/> 
+            <AssignmentInd className="text-[#f92e9e]  hover:text-[#16ffbd] easy-in duration-600" style={{ fontSize: "35px" }}/> 
             {/* sign in */}
           </button>
           <button>
             <Favorite
-              className="ml-3 text-[#f92e9e] "
+              className="ml-3 text-[#f92e9e]  hover:text-[#16ffbd] easy-in duration-600"
               style={{ fontSize: "35px" }}
             />
           </button>
           <button className={style}>
             <Badge badgeContent={1} color="primary" className="text-[#16ffbd] ">
               <LocalMall
-                className="text-[#f92e9e]"
+                className="text-[#f92e9e]  hover:text-[#16ffbd] easy-in duration-600"
                 style={{ fontSize: "35px" }}
               />
             </Badge>
