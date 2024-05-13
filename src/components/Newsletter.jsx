@@ -16,7 +16,7 @@ function Newsletter() {
             placeholder='email'
             />
             <button type='submit' className='bg-[#16ffbd] flex-1 h-[100%]'>
-                <Send className='text-white'/>
+                <Send className='text-white'></Send>
             </button>
         </div>
     </div>
