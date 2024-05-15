@@ -8,6 +8,7 @@ import {
 } from "@material-ui/icons";
 import Logo from "./img/logo.svg";
 import { Badge } from "@material-ui/core";
+import {Link} from "react-router-dom"
 
 function Navbar() {
   const style = "text-[14px] cursor-pointer ml-[25px] easy-in duration-600";
@@ -35,10 +36,10 @@ function Navbar() {
 
         {/* right div */}
         <div className="right flex flex-1 items-center justify-end">
-          <button className={style}>
+          <Link to="/login" className={style}>
             <HowToReg className="text-[#f92e9e]  hover:text-[#16ffbd] " style={{ fontSize: "35px" }} />
             {/* register */}
-          </button>
+          </Link>
           <button className={style}>
             <AssignmentInd className="text-[#f92e9e]  hover:text-[#16ffbd] easy-in duration-600" style={{ fontSize: "35px" }}/> 
             {/* sign in */}
@@ -49,6 +50,7 @@ function Navbar() {
               style={{ fontSize: "35px" }}
             />
           </button>
+          <Link to="/cart">
           <button className={style}>
             <Badge badgeContent={1} color="primary" className="text-[#16ffbd] ">
               <LocalMall
@@ -56,7 +58,8 @@ function Navbar() {
                 style={{ fontSize: "35px" }}
               />
             </Badge>
-          </button>
+          </button></Link>
+     
         </div>
       </div>
     </div>

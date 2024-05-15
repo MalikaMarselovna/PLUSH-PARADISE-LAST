@@ -18,6 +18,7 @@ import NotFound from "./pages/NotFound/NotFound"
 import Menu from "./components/Menu/Menu";
 import Announce from "./components/Announce";
 import Newsletter from "./components/Newsletter";
+import SignIn from "./pages/SignIn";
 
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
             <Route path="delivery" element={<Delivery />} />
             <Route path="cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signIn" element={<SignIn />} />
+            
           </Routes>
         </main>
         <Newsletter/>
