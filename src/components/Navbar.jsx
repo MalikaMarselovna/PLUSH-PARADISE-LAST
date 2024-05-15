@@ -1,13 +1,13 @@
 import React from "react";
 import {
-  Search,
   LocalMall,
   Favorite,
   HowToReg,
   AssignmentInd,
 } from "@material-ui/icons";
 import Logo from "./img/logo.svg";
-import { Badge } from "@material-ui/core";
+import Badge from '@mui/material/Badge';
+import Search from '@mui/icons-material/Search';
 import {Link} from "react-router-dom"
 
 function Navbar() {
