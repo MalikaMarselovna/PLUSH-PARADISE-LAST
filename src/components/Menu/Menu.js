@@ -9,13 +9,16 @@ function Menu() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about">About Us</Link>
+        </li>
+        <li>
+          <Link to="/category">Our Products</Link>
         </li>
         <li>
           <Link to="/delivery">Delivery</Link>
         </li>
         <li>
-          <Link to="/contacts">Contacts</Link>
+          <Link to="/contacts">Contacts Us</Link>
         </li>
       </ul>
     </nav>

@@ -8,10 +8,8 @@ import Footer from '../components/Footer'
 function CategoryPages() {
   return (
     <div>
-        <Announce/>
-        <Navbar/>
         <div className='flex flex-col p-5'>
-            <h1 className='text-[30px]'>Toys</h1>
+        <h1 className="text-5xl font-bold mb-4 flex justify-center text-[#f92e9e]">Our Toys</h1>
             <div className='flex items-center justify-between mt-3'>
                 <div className='flex '>
                     <p>Filter by</p>
@@ -42,8 +40,6 @@ function CategoryPages() {
             </div>
         </div>
         <Products/>
-        <Newsletter/>
-        <Footer/>
     </div>
   )
 }

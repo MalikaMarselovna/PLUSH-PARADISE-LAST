@@ -52,7 +52,7 @@ function Navbar() {
           </button>
           <Link to="/cart">
           <button className={style}>
-            <Badge badgeContent={1} color="primary" className="text-[#16ffbd] ">
+            <Badge badgeContent={2} color="primary" className="text-[#16ffbd] ">
               <LocalMall
                 className="text-[#f92e9e]  hover:text-[#16ffbd] easy-in duration-600"
                 style={{ fontSize: "35px" }}

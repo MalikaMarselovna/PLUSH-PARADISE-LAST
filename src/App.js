@@ -19,6 +19,9 @@ import Menu from "./components/Menu/Menu";
 import Announce from "./components/Announce";
 import Newsletter from "./components/Newsletter";
 import SignIn from "./pages/SignIn";
+import ReactDOM from 'react-dom';
+import Products from "./components/Products";
+
 
 
 function App() {
@@ -33,12 +36,16 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contacts" element={<Contacts />} />
-            <Route path="order" element={<CategoryPages />} />
+            <Route path="category" element={<CategoryPages />} />
             <Route path="delivery" element={<Delivery />} />
             <Route path="cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
             <Route path="login" element={<Login />} />
             <Route path="signIn" element={<SignIn />} />
+            <Route path="productPage" element={<ProductPage />} />
+            <Route path="products" element={<Products />} />
+            <Route path="card" element={<ProductPage />} />
+
             
           </Routes>
         </main>

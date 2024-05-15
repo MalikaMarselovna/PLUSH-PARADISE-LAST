@@ -13,7 +13,7 @@ function Cart() {
           </Link>
 
           <div className="flex underline text-lg hover:cursor-pointer">
-            <p className="mr-5">Items in your Cart : 3</p>
+            <p className="mr-5">Items in your Cart : 2</p>
             <p>Whitlist Item : 0</p>
           </div>
           <button className="btn">Checkout</button>
