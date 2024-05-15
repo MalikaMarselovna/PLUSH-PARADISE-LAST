@@ -1,0 +1,10 @@
+.Delivery_txt p{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.Delivery_video{
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  height: 400px;
+}
