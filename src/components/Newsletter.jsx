@@ -1,5 +1,6 @@
-import React from 'react'
-import { Send } from '@material-ui/icons';
+import React from 'react';
+import { Send } from '@mui/icons-material';
+
 function Newsletter() {
   return (
     <div className='flex justify-center items-center h-[350px] w-[100%] flex-col bg-[#f92e9e]'>
@@ -11,16 +12,16 @@ function Newsletter() {
         </h2>
         <div className='flex mt-[2rem] items-center justify-between min-w-[30rem] min-h-[2rem] bg-white border-[#cccccc] rounded-[5px] overflow-hidden'>
             <input
-            className='border-none pl-[20px] flex-[7] outline-none h-[50px]'
-            type="email" 
-            placeholder='email'
+              className='border-none pl-[20px] flex-[7] outline-none h-[50px]'
+              type="email" 
+              placeholder='email'
             />
             <button type='submit' className='bg-[#16ffbd] flex-1 h-[100%]'>
-                <Send className='text-white'></Send>
+                <Send className='text-white' />
             </button>
         </div>
     </div>
-  )
+  );
 }
 
-export default Newsletter
+export default Newsletter;

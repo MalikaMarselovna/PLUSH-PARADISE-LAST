@@ -46,7 +46,6 @@ function App() {
             <Route path="products" element={<Products />} />
             <Route path="card" element={<ProductPage />} />
 
-            
           </Routes>
         </main>
         <Newsletter/>
