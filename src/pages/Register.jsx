@@ -44,20 +44,21 @@
 //   }
 // }
 
-import { create } from "@mui/material/styles/createTransitions";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import {auth} from "../Firebase"
+import { auth } from "../Firebase";
 
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [copyPassword, setCopyPassword] = useState("");
   const [error, setError] = useState("");
-  function register() {
+
+  function register(e) {
     e.preventDefault();
     if (copyPassword !== password) {
       setError("Passwords didn't match");
+      return; // остановить дальнейшее выполнение, если пароли не совпадают
     }
     createUserWithEmailAndPassword(auth, email, password)
       .then((user) => {
@@ -65,32 +66,42 @@ const Register = () => {
         setError("");
         setCopyPassword("");
         setPassword("");
+        setEmail(""); // Очистка поля электронной почты
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+        setError("Failed to create an account");
+      });
   }
+
   return (
     <div>
       <form onSubmit={register}>
-        <text className="text-2xl text-[#f92e9e]">Create an account</text>
+        <p className="text-2xl text-[#f92e9e]">Create an account</p>
+        {error && <p className="text-red-500">{error}</p>} {/* Отображение ошибки */}
         <input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email"
+          placeholder="Email"
         />
         <input
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
+          placeholder="Password"
         />
         <input
           value={copyPassword}
           onChange={(e) => setCopyPassword(e.target.value)}
-          type="passwotd"
+          type="password"
+          placeholder="Confirm Password"
         />
-        <button>Create</button>
+        <button type="submit">Create</button>
       </form>
     </div>
   );
 };
 
 export default Register;
+
