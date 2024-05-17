@@ -40,9 +40,9 @@ function Navbar() {
           <Link to="/login" className={style}>
             <HowToRegOutlined className="text-[#f92e9e] hover:text-[#16ffbd]" style={{ fontSize: "35px" }} />
           </Link>
-          <button className={style}>
+          <Link to="/register" className={style}>
             <AssignmentIndOutlined className="text-[#f92e9e] hover:text-[#16ffbd] ease-in duration-600" style={{ fontSize: "35px" }} />
-          </button>
+          </Link>
           <button>
             <FavoriteBorderOutlined className="ml-3 text-[#f92e9e] hover:text-[#16ffbd] ease-in duration-600" style={{ fontSize: "35px" }} />
           </button>
